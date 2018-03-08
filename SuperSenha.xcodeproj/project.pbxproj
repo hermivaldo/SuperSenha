@@ -12,6 +12,9 @@
 		ACD3F25B2050A50200915D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD3F2592050A50200915D76 /* Main.storyboard */; };
 		ACD3F25D2050A50200915D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD3F25C2050A50200915D76 /* Assets.xcassets */; };
 		ACD3F2602050A50200915D76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD3F25E2050A50200915D76 /* LaunchScreen.storyboard */; };
+		ACD3F2682050BEC000915D76 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3F2672050BEC000915D76 /* PasswordViewController.swift */; };
+		ACD3F26A2050C6AD00915D76 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3F2692050C6AD00915D76 /* PasswordGenerator.swift */; };
+		ACD3F26C2050D26B00915D76 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3F26B2050D26B00915D76 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		ACD3F25C2050A50200915D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD3F25F2050A50200915D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD3F2612050A50200915D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACD3F2672050BEC000915D76 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		ACD3F2692050C6AD00915D76 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
+		ACD3F26B2050D26B00915D76 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,13 @@
 			children = (
 				ACD3F2552050A50200915D76 /* AppDelegate.swift */,
 				ACD3F2572050A50200915D76 /* ViewController.swift */,
+				ACD3F2692050C6AD00915D76 /* PasswordGenerator.swift */,
 				ACD3F2592050A50200915D76 /* Main.storyboard */,
+				ACD3F26B2050D26B00915D76 /* ModalViewController.swift */,
 				ACD3F25C2050A50200915D76 /* Assets.xcassets */,
 				ACD3F25E2050A50200915D76 /* LaunchScreen.storyboard */,
 				ACD3F2612050A50200915D76 /* Info.plist */,
+				ACD3F2672050BEC000915D76 /* PasswordViewController.swift */,
 			);
 			path = SuperSenha;
 			sourceTree = "<group>";
@@ -136,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD3F26A2050C6AD00915D76 /* PasswordGenerator.swift in Sources */,
+				ACD3F26C2050D26B00915D76 /* ModalViewController.swift in Sources */,
 				ACD3F2582050A50200915D76 /* ViewController.swift in Sources */,
 				ACD3F2562050A50200915D76 /* AppDelegate.swift in Sources */,
+				ACD3F2682050BEC000915D76 /* PasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.hermivaldo.SuperSenha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -294,7 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.hermivaldo.SuperSenha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
